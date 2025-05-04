@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { Plus, Menu } from "lucide-react";
@@ -13,7 +12,8 @@ export function Header() {
   
   const menuItems = [
     { label: "Home", path: "/" },
-    { label: "Games", path: "/games" }
+    { label: "Games", path: "/games" },
+    { label: "API Docs", path: "/api-docs" }
   ];
 
   const mobileMenu = (

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,6 +9,7 @@ import GameList from "./pages/GameList";
 import CreateGame from "./pages/CreateGame";
 import EditGame from "./pages/EditGame";
 import GameDetail from "./pages/GameDetail";
+import ApiDocs from "./pages/ApiDocs";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +26,8 @@ const App = () => (
           <Route path="/edit/:id" element={<EditGame />} />
           <Route path="/game/:id" element={<GameDetail />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/api-docs" element={<ApiDocs />} />
+
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
